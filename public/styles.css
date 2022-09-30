@@ -1,0 +1,87 @@
+body{
+	background-color: white;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	font-family: "Montserrat", "Arial Black";
+}
+
+h1{
+	font-weight: normal;
+	padding-top: 1vw;
+}
+
+h3{
+	margin-top: 10px;
+}
+
+p{
+	padding-right: 10vw;
+	padding-left: 10vw;
+	padding-bottom: 1vw;
+}
+
+input{
+	width: 48%;
+	margin: 5px auto 15px;
+	font-size: 18px;	
+	display: inline-block;
+	background-color: #00e6e6;
+	color: #FFFFFF;
+}
+
+#game-field{
+	padding: 0;
+	position: relative;
+}
+
+#score-wrapper{
+	min-width: 120px;
+	background-color: white;
+	color: black;
+	font-size: 23px;
+	opacity: 1;
+	position: absolute;
+	left: 29vw;
+	top: 30px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#instructions{
+	background-color: #f2f2f2;
+	text-align: center;
+	margin: 0;
+}
+
+canvas{
+	display: block;
+	background-color: white;
+	border-radius: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-input{
+	font-size: 20px;
+	display: block;
+	margin: auto;
+	margin-bottom: 5px;
+	width: 90%;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	text-align: center;
+	color: black;
+}
+
+.play-button{
+	font-size: 20px;	
+	display: block;
+	margin: 5px auto 5px;
+	width: 90%;
+	background-color: #f2f2f2;
+	color: black;
+}
+

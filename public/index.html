@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Alien Feeding Adventure</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+
+    <div id="score-wrapper" class="hiddenOnStart" role="complementary">
+        <div>Score: <span class="player-score"></span></div>
+    </div>
+
+    <div id="loginModal" role="form">
+		<form class="name-form">
+			<div class="text-center error-message"></div>
+			<label>Enter your name
+				<input id="name-input" class="text-input text-center form-control" type="text" name="name-input" placeholder="Enter your name here (required)" required>
+			</label>
+			<button type="submit" class="btn play-button play-guest">Press to Play, Instructions Below</button>
+		</form>
+	</div>
+
+    <div role="main">
+		<canvas id="the-canvas" tabindex="0" alt="Background for Space canvas game" style="background: url('images/space11.jpg')">
+			<!-- our drawing will go here -->
+		</canvas>
+	</div>
+	
+	<div id="instructions" role="region">
+		<h1>Hello <span class="player-name"></span>!</h1>
+		<p>Your mission, should you choose to accept it, is to direct your brightly 
+		coloured space aliens to their food.</p>
+		<p>Do this by clicking on each alien and moving them with WASD. 
+		But remember that the center of your vision will always be the fire alien, 
+		so make sure you do not lose the others! If you run out of life on any of 
+		aliens, the game will be over! So don't neglect anyone. The game ends when 
+		you eat all the food.</p>
+		
+	</div>
+	
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/uiStuff.js"></script>
+	<script src="/canvasStuff.js"></script>
+	<script src="/player.js"></script>
+	<script src="/socketStuff.js"></script>
+
+</body>
+</html>
